@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - 土木施工管理技士 二次検定 経験記述</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+      max-width: 640px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+      line-height: 1.8;
+    }
+    h1 { color: #0D47A1; font-size: 22px; }
+    h2 { font-size: 16px; margin-top: 28px; }
+    h3 { font-size: 14px; margin-top: 20px; }
+    p { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h1>プライバシーポリシー</h1>
+  <p>アプリ名：土木施工管理技士 二次検定 経験記述<br>
+  開発者：KawaApp Studio<br>
+  最終更新：2026年8月12日</p>
+
+  <h2>開発者による情報収集</h2>
+  <p>本アプリは、氏名・メールアドレス・電話番号・住所などの個人を特定できる情報、位置情報、
+  連絡先、写真、端末識別子・広告識別子を、<strong>入力欄や取得APIを通じて集めることはありません</strong>。
+  アカウント登録もありません。</p>
+  <p>ただし、答案は利用者ご自身が自由に書くものです。AI点検を実行した場合、本文に書かれた
+  社名・地名・氏名などは端末内で自動的に伏せ字にしてから送信しますが、
+  <strong>この自動置換は完全ではなく、取りこぼしたものはそのまま送信されます。</strong>
+  送信前に全文を表示していますので、必ずご確認ください。</p>
+  <p>通常の機能（施工経験記述の下書き・セルフチェック・手書きリハーサル）で入力された内容を、
+  開発者へ送信することはありません。</p>
+  <p>任意の「AI点検」を実行した場合に限り、下記「AI点検」の項に記載した内容を送信します。</p>
+
+  <h2>ネットワーク通信</h2>
+  <p>下書き・セルフチェック・手書きリハーサルは、すべて端末内で完結します。
+  広告配信・行動解析・トラッキング目的の通信は一切ありません（広告SDK・アナリティクスSDKを
+  組み込んでいません）。本アプリが行う通信は次の3つだけです。</p>
+  <ol>
+    <li><strong>AI点検</strong>（任意・有料。iPhone／iPad のみ。後述）</li>
+    <li>匿名の利用状況カウンタ（後述）</li>
+    <li>アプリ内購入に関する通信（後述）。課金管理サービスの初期化は<strong>起動のたびに
+      行われる</strong>ため、購入されない場合でも通信が発生します。回数券の残高照会と
+      付与も、開発者が運用する中継サーバーとの通信になります。</li>
+  </ol>
+  <p>本アプリは iCloud 同期を行いません。下書き・記録は端末内にのみ保存されます。</p>
+
+  <h2>AI点検（任意・有料の機能）</h2>
+  <p>「施工経験記述」の下書きについて、書いた内容のつながりが読み取れるかどうかと、
+  ご本人にしか答えられない確認の質問を返す機能です。
+  <strong>お使いになるかどうかは任意で、実行のたびに送信内容の全文をお見せし、
+  そのつど明示的な同意をいただいてから送信します。</strong>この機能を使わなくても、
+  他のすべての機能はそのままご利用いただけます。</p>
+
+  <h3>送信するもの</h3>
+  <ul>
+    <li>ご自身が入力した「テーマ名」と、設問ごとの記述欄の本文。
+      欄の名前は級と設問によって変わります（現場状況／技術的課題／検討した項目／
+      対応処置／評価／留意した事項／講じた対策／その理由）。
+      ただし、端末内で〔工事概要〕に入力された値（工事名・発注者名・工事場所・工期・
+      立場の自由記述）と、社名・団体名・官公庁名・地名・金額・年月日・氏名・
+      メールアドレス・電話番号などのパターンを自動的に置き換えたうえで送信します。
+      置き換えの結果は送信前に全文表示し、伏せたい語をご自身で追加できます。
+      <strong>この自動置換は完全ではありません。表示される全文を必ずご確認ください。</strong></li>
+    <li>立場の区分（発注機関側／元請／一次下請／二次下請以降）。
+      立場そのものの自由記述は送りません。</li>
+    <li>端末内で数えた測定値（文字数・件数などの数値のみ）</li>
+    <li>どの級・どの設問の欄かを示す識別子と、欄の見出し（例:「技術的課題」「対応処置」）。
+      設問ごとに欄の構成が違うため、送った本文がどの欄のものかを示すために必要です。</li>
+    <li>端末内で生成した匿名ID（乱数32桁。氏名・メールアドレス・端末識別子とは無関係で、
+      個人を特定できません。購入した回数券の残高管理と、下記の結果の保管に使用します）</li>
+  </ul>
+
+  <h3>送信しないもの</h3>
+  <ul>
+    <li><strong>〔工事概要〕欄のすべて</strong>（工事名・立場の自由記述・発注者名・工事場所・
+      工期・主な工種・施工量）。この欄は端末内にのみ保存されます。</li>
+    <li>氏名・メールアドレス・電話番号・位置情報・端末識別子・広告識別子</li>
+    <li>手書きリハーサルの記録（紙に書いた答案そのものはアプリが受け取りません。
+      経過時間・書き切れたかどうか・任意で入力する「書けなかった欄」「手が止まった理由」の
+      1行は端末内にのみ保存され、送信しません）</li>
+  </ul>
+
+  <h3>送信先</h3>
+  <ul>
+    <li><strong>Cloudflare, Inc.</strong>（米国）— 開発者が運用する中継サーバーの稼働基盤。
+      中継サーバーは送信された本文を保存しません。</li>
+    <li><strong>Anthropic PBC</strong>（米国）— 点検を行う生成AI（Claude）の提供者。
+      同社のAPI利用条件に基づき、送信内容はモデルの学習には使用されません。
+      同社の標準のAPIデータ保持方針により、入力および出力は原則30日以内に削除されます
+      （利用条件の執行または法令対応のため、これより長く保持される場合があります）。</li>
+  </ul>
+  <p>送信された本文は、点検結果を返すための処理に必要な間だけ扱われ、開発者側に保存されません。</p>
+  <p>点検の結果は、同じ内容で再度実行したときに回数を二重に消費させないため、
+  匿名IDと結び付けて中継サーバーに保管します。保管するのは
+  <strong>判定の種別を表すコードと、引用箇所の位置・長さの数値だけ</strong>で、
+  答案の文章そのものは含みません（引用は再実行時に、お客様の端末から送られた同じ本文から
+  切り出し直します）。この保管は最長で7日間です。</p>
+  <p>お勤め先の規程により外部の生成AIサービスへ業務に関する情報を送信することが
+  禁じられている場合があります。ご利用前にご確認ください。</p>
+  <p>同意の撤回は、AI点検を実行しないことによっていつでも可能です。
+  同意は実行のたびに個別にいただくため、過去の同意が次回に引き継がれることはありません。</p>
+
+  <h2>匿名の利用状況カウンタ</h2>
+  <p>どの画面がどれだけ使われたかを判断するため、画面を開いた回数などの
+  <strong>イベント名と件数だけ</strong>を、開発者が運用する中継サーバー（Cloudflare）へ送信します。
+  答案の本文・入力内容・個人を識別できる情報は含まれません。開発者はIPアドレスを保存しません
+  （通信の中継にともなう接続情報の取り扱いは Cloudflare のプライバシーポリシーによります）。</p>
+
+  <h2>アプリ内課金と購入情報の取り扱い</h2>
+  <p>本アプリのアプリ内課金は、AI点検の回数券（消費型。サブスクリプションではありません）だけです。
+  購入処理は Apple（App Store）および課金管理サービス RevenueCat（RevenueCat, Inc.・米国）を
+  通じて行われます。購入処理と購入状態の確認のため、次の情報が RevenueCat に送信・保存されます。</p>
+  <p>・RevenueCat が自動生成する匿名の利用者識別子（App User ID。氏名やメールアドレスとは
+  結びついていません）<br>
+  ・購入履歴（Apple が管理する購入トランザクション、購入日時、購入した製品ID、検証結果）<br>
+  ・アプリのバージョン・OSバージョン・国／地域など、購入処理に付随する技術情報</p>
+  <p>これらは広告配信・行動解析・トラッキングには利用しません。氏名・メールアドレス等の
+  個人を特定できる情報を開発者が受け取ることはありません。決済そのものは Apple が処理し、
+  クレジットカード情報等が開発者や RevenueCat に渡ることはありません。
+  RevenueCat のプライバシーポリシーは
+  <a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a> をご参照ください。</p>
+  <p>購入した回数を実際に付与するときは、Apple が発行した取引IDを開発者の中継サーバーへ送り、
+  Apple の App Store Server API で購入の成立を確認します。この取引IDは、同じ購入で二重に
+  付与しないために保存します（下記「中継サーバーに保存されるデータ」）。</p>
+
+  <h2>端末内に保存されるデータ</h2>
+  <p>施工経験記述の下書き（〔工事概要〕を含む）、手書きリハーサルの記録、選択中の級は、
+  端末の UserDefaults / SharedPreferences に保存されます。回数券の残高管理に使う匿名IDは
+  iOS のキーチェーンに保存されます。アプリを削除すると、これらのデータも削除されます
+  （匿名IDはキーチェーンの仕様上、再インストール時に復元される場合があります）。</p>
+  <p><strong>下書きは iCloud に同期しません。</strong>端末内にのみ保存されます。
+  〔工事概要〕には発注者名・工事場所など、お勤め先や取引先に関わる情報が入るためです。</p>
+
+  <h2>中継サーバーに保存されるデータと保存期間</h2>
+  <p>AI点検をご利用の場合、開発者が運用する中継サーバー（Cloudflare）に、匿名IDごとに次のものが
+  保存されます。<strong>答案の本文は保存されません。</strong></p>
+  <ul>
+    <li>回数券の残高 ―― <strong>期限を設けていません</strong>。
+      ご購入いただいた回数を失効させないためです。</li>
+    <li>付与済みの購入取引の記録（App Store の取引ID・付与日時） ―― 同じ購入で
+      二重に付与しないために必要なので、<strong>期限を設けていません</strong>。</li>
+    <li>直近の点検結果（判定コードと、引用箇所の位置・長さを表す数値のみ。引用された文章自体は
+      含みません） ―― 同じ答案で再実行したときに回数を消費せず結果をお返しするために保存します。
+      <strong>7日を過ぎたものは自動的に削除されます。</strong></li>
+  </ul>
+  <p>これらは端末内で生成された匿名ID（乱数32桁）に紐づいており、氏名・メールアドレス・
+  電話番号とは結び付いていません。開発者はこの匿名IDから利用者個人を特定できません。</p>
+  <p>上記以外にサーバーへ保存されるのは、利用状況の日次件数（90日で自動削除）と、
+  障害監視の記録（最大30日で自動削除）だけです。いずれも匿名IDと答案本文を含みません。</p>
+
+  <h2>データの削除のご請求</h2>
+  <p>端末内のデータは、アプリを削除すれば消去されます。中継サーバーに保存された残高・
+  取引記録の削除をご希望の場合は、末尾のお問い合わせ先までご連絡ください
+  （削除すると、購入済みの残りの回数も失われます）。RevenueCat 側の購入履歴についても
+  同様にご連絡ください。なお、購入の事実は Apple のアカウント側にも記録されており、
+  これは開発者が削除できるものではありません。</p>
+
+  <h2>第三者サービス</h2>
+  <p>広告・トラッキング目的の第三者SDKは使用していません。</p>
+  <p>本アプリが利用する外部サービスは次のとおりです。</p>
+  <ul>
+    <li><strong>Apple（App Store）</strong> ―― 決済と、購入の成立確認（App Store Server API）</li>
+    <li><strong>RevenueCat, Inc.</strong>（米国）―― アプリ内課金の管理</li>
+    <li><strong>Cloudflare, Inc.</strong>（米国）―― 開発者が運用する中継サーバーの稼働基盤。
+      AI点検のときだけでなく、<strong>匿名の利用状況カウンタの受け取りと、回数券の残高照会・
+      付与にも使用します</strong></li>
+    <li><strong>Anthropic PBC</strong>（米国）―― AI点検を実行した場合に限り使用します</li>
+  </ul>
+  <p>いずれの提供先についても、各社が公開する利用条件およびプライバシーポリシーにおいて、
+  本ポリシーと同等以上のデータ保護（目的外利用の禁止、モデル学習への不使用、保持期間の限定など）が
+  定められていることを確認したうえで採用しています。各社のポリシーは
+  <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>／
+  <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>／
+  <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> をご参照ください。</p>
+
+  <h2>レビュー誘導</h2>
+  <p>Apple 純正の SKStoreReviewController（App Store の標準レビュー機能）のみを使用しています。
+  本アプリが個別にユーザーの評価情報を取得することはありません。</p>
+
+  <h2>お子様のプライバシー</h2>
+  <p>本アプリは資格試験の学習用途であり、13歳未満のお子様から意図的に情報を収集することは
+  ありません。</p>
+
+  <h2>本ポリシーの変更</h2>
+  <p>本ポリシーを変更する場合は、本ページを更新し、最終更新日を改めます。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>ご質問は以下までお問い合わせください：<br>
+  <a href="mailto:asonedaywillberefreshing@gmail.com">asonedaywillberefreshing@gmail.com</a></p>
+
+  <h2>Privacy Policy (English)</h2>
+  <p>This app does not collect personal information, location data, device identifiers or advertising
+  identifiers. There is no account registration and no advertising or tracking SDK. Your
+  construction-experience drafts, the handwriting-rehearsal log and the selected grade are stored in
+  the device's UserDefaults/SharedPreferences and are <strong>not</strong> synced to iCloud; they are
+  removed when the app is uninstalled.</p>
+  <p><strong>AI Review (optional, paid, iOS only).</strong> When you choose to run it, the text you
+  wrote in the answer sections (the section names depend on the grade and the question: site
+  situation / technical issue / items considered / action taken / evaluation / point of caution /
+  countermeasure / reason) is sent to a relay server operated by the developer on
+  <strong>Cloudflare, Inc.</strong> (USA) and then to <strong>Anthropic PBC</strong> (USA) for
+  processing by the Claude model. Before every request the app masks, on-device, the values you
+  entered in the project outline (project name, client, location, period, free-text role) together
+  with company, organisation, government-office, place, amount, date, personal-name, e-mail and
+  phone-number patterns, shows you the complete text that will be sent, and asks for your explicit
+  consent. <strong>The masking is not guaranteed to be exhaustive; please review the displayed
+  text.</strong> The project outline fields (project name, role, client, location, period, main work
+  type, quantity) are never transmitted. Also sent: the theme name you entered, your role category,
+  and numeric measurements computed on-device. An anonymous random identifier (32 random hex
+  characters, unrelated to your name, e-mail or any device identifier) is sent to manage your
+  purchased credit balance and to key the result cache. Submitted text is not stored by the
+  developer. The result is cached against the anonymous identifier for up to 7 days so that
+  re-running the same text does not consume another credit; that cache holds only verdict codes and
+  the offset/length of the quoted span, never the text itself (quotes are re-extracted from the body
+  your device sends on the retry). Anthropic does not use API inputs to train its models and, under
+  its standard API data-retention policy, deletes inputs and outputs within 30 days (longer only
+  where required for enforcement of its terms or by law). Your workplace may prohibit sending
+  work-related information to external AI services; please check before use. Consent is requested for
+  every single request and is never carried over.</p>
+  <p><strong>Anonymous usage counters.</strong> Event names and counts only (no text, no identifiers)
+  are sent to the developer's relay server to understand which screens are used. The developer does
+  not store IP addresses. Note that the relay server on Cloudflare is used not only for AI Review but
+  also for these counters and for the credit balance.</p>
+  <p><strong>In-app purchases</strong> (a consumable credit pack for AI Review; no subscription) are
+  managed with <strong>RevenueCat, Inc.</strong> (USA) and Apple's App Store. The credit balance and
+  the granted transaction IDs are stored on the relay server, keyed by the anonymous identifier, with
+  no expiry; contact the address above to request deletion.</p>
+</body>
+</html>
