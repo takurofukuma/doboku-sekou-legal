@@ -23,7 +23,7 @@
   <h1>プライバシーポリシー</h1>
   <p>アプリ名：土木施工管理技士 二次検定 経験記述<br>
   開発者：KawaApp Studio<br>
-  最終更新：2026年9月14日</p>
+  最終更新：2026年9月20日</p>
 
   <h2>開発者による情報収集</h2>
   <p>本アプリは、氏名・メールアドレス・電話番号・住所などの個人を特定できる情報、位置情報、
@@ -40,7 +40,8 @@
   <h2>ネットワーク通信</h2>
   <p>下書き・セルフチェック・手書きリハーサルは、すべて端末内で完結します。
   広告配信・行動解析・トラッキング目的の通信は一切ありません（広告SDK・アナリティクスSDKを
-  組み込んでいません）。本アプリが行う通信は次の3つだけです。</p>
+  組み込んでいません）。本アプリがインターネット上のサーバーへ自ら行う通信は次の3つだけです。
+  このほかに、iOS の iCloud を経由した端末間の同期があります（後述）。</p>
   <ol>
     <li><strong>AI点検</strong>（任意・有料。iPhone／iPad のみ。後述）</li>
     <li>匿名の利用状況カウンタ（後述）</li>
@@ -48,7 +49,13 @@
       行われる</strong>ため、購入されない場合でも通信が発生します。回数券の残高照会と
       付与も、開発者が運用する中継サーバーとの通信になります。</li>
   </ol>
-  <p>本アプリは iCloud 同期を行いません。下書き・記録は端末内にのみ保存されます。</p>
+  <p><strong>iCloud 同期について。</strong>第一次検定（択一）の学習記録（問題番号・解いた回数・
+  正解した回数）と、ブックマークした問題番号は、機種変更しても学習の続きから使えるように
+  iCloud（Apple の Key-Value ストア）へ同期します。同期されるのは問題番号と回数の数値だけで、
+  答案の本文・氏名・メールアドレス・位置情報などは含まれません。
+  <strong>施工経験記述の下書き（〔工事概要〕を含む）と手書きリハーサルの記録は iCloud へ同期せず、
+  端末内にのみ保存されます。</strong>あわせて、回数券の残高管理に使う匿名ID（32桁の乱数）を
+  iCloud キーチェーンへ同期します（後述）。</p>
 
   <h2>AI点検（任意・有料の機能）</h2>
   <p>「施工経験記述」の下書きについて、書いた内容のつながりが読み取れるかどうかと、
@@ -139,10 +146,14 @@
   付与しないために保存します（下記「中継サーバーに保存されるデータ」）。</p>
 
   <h2>端末内に保存されるデータ</h2>
-  <p>施工経験記述の下書き（〔工事概要〕を含む）、手書きリハーサルの記録、選択中の級は、
+  <p>施工経験記述の下書き（〔工事概要〕を含む）、手書きリハーサルの記録、第一次検定の学習記録
+  （問題番号・解いた回数・正解した回数）、ブックマークした問題番号、選択中の級は、
   端末の UserDefaults / SharedPreferences に保存されます。回数券の残高管理に使う匿名IDは
   iOS のキーチェーンに保存されます。アプリを削除すると、これらのデータも削除されます
-  （匿名IDはキーチェーンの仕様上、再インストール時に復元される場合があります）。</p>
+  （匿名IDはキーチェーンの仕様上、再インストール時に復元される場合があります）。
+  ただし<strong>学習記録とブックマークは iCloud にも同期される</strong>ため、アプリを削除しても
+  同じ Apple アカウントの他の端末には残ります。第一次検定のホームから開く設定画面の
+  「ブックマークを全て削除」「学習進捗をリセット」を実行すると、iCloud 側からも削除されます。</p>
   <p><strong>下書きは iCloud に同期しません。</strong>端末内にのみ保存されます。
   〔工事概要〕には発注者名・工事場所など、お勤め先や取引先に関わる情報が入るためです。</p>
 
@@ -208,7 +219,7 @@
 
   <h2>Privacy Policy (English)</h2>
   <p>This app does not collect personal information, location data, device identifiers or advertising
-  identifiers. Buttons such as "report an error" or "contact us" only open your own mail app; the app never sends mail by itself. If you choose to send a message, the developer receives your email address, the subject, and the body, and uses them only to reply and to consider fixes and improvements. They are not shared with third parties. There is no account registration and no advertising or tracking SDK. Your
+  identifiers. Buttons such as "report an error" or "contact us" only open your own mail app; the app never sends mail by itself. If you choose to send a message, the developer receives your email address, the subject, and the body, and uses them only to reply and to consider fixes and improvements. They are not shared with third parties. There is no account registration and no advertising or tracking SDK. Your first-stage (multiple-choice) study record (question numbers, attempt counts and correct counts) and your bookmarked question numbers <strong>are</strong> synced through Apple iCloud so that they carry over when you change devices; only numbers are synced, never the text of your answers. Your
   construction-experience drafts, the handwriting-rehearsal log and the selected grade are stored in
   the device's UserDefaults/SharedPreferences and are <strong>not</strong> synced to iCloud; they are
   removed when the app is uninstalled.</p>
